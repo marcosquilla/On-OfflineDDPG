@@ -6,7 +6,6 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 from torch.nn import Linear, ReLU, Tanh
-from pytorch_sac_ae.utils import ReplayBuffer
 from pytorch_sac_ae.video import VideoRecorder
 import random
 import dmc2gym
