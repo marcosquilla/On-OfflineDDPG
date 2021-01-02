@@ -247,4 +247,4 @@ for i_episode in tqdm(range(num_episodes)):
 			torch.save(policy_net.state_dict(), './policies/' + str(directory) + '/last_policy_params')
 
 	if i_episode % int(num_episodes/n_saves) == 0: # Save a file
-			torch.save(replay.memory[-int(num_episodes/n_saves*1000/action_skip):], './policies/' + str(directory) + '/replayCart' + str(i_episode))
+			torch.save(replay.memory[-int(num_episodes/n_saves*1000/action_skip):], './policies/' + str(directory) + '/data/replayCart' + str(i_episode))
