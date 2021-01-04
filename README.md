@@ -12,9 +12,9 @@ Then, the data generated will be used by the offline version of the algorithm. B
 Here it can be chosen to balance the dataset. Should this be the case, classes will be created based on the rewards (currently classes are up to the first decimal) and then an equal amount of records will be taken randomly from each class. The amount of decimals can be changed, but pay attention to df2 as it determines how many records to take (it doesn't automatically take the maximum amount).\
 This algorithm also saves the the policy parameters and a video for the best performing evaluation.\
 The following is the histogram of the step reward obtained of the actions in the different datasets used.\
-![Histograms](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/histo.jpeg)\
+![Histograms](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/figures/histo.jpeg)\
 In the next graph it can be seen how much variety in states+actions there is for the step reward obatined in all datasets used.\
-![Diversity](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/pca.jpeg)
+![Diversity](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/figures/pca.jpeg)
 ## Comparing results
 Worth to mention when plotting the rewards against the episodes, is that in the online version there are 20 updates per episode, while in the offline there is a single one.\
-![Performance comparison](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/DS_comparison.jpeg)
+![Performance comparison](https://github.com/marcosquilla/On-OfflineDDPG/blob/main/figures/DS_comparison.jpeg)
